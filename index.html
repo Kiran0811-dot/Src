@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    display: flex;
+    font-family: "Open Sans";
+}
+
+.sidebar-container {
+    background: #002159;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.dashboard {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-1 {
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.home {
+    padding-left: 5px;
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+
+.h {
+    display: flex;
+}
+
+.image-1 {
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.name {
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 9px;
+    margin-top: 22px;
+    padding-top: 8px;
+
+}
+
+.profile {
+    display: flex;
+    margin-top: auto;
+}
+
+.favourites-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+    width: 70vw;
+    height: 500px;
+    flex-grow: 1;
+
+}
+
+.cars {
+    font-size: 14px;
+}
+
+.b-image {
+    height: 80px;
+}
+
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+} 
+    </style>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="sidebar-container">
+            <h1 class="dashboard">Dashboard</h1>
+            <div class="options">
+
+                <i class="fas fa-home home-1"><span class="home">Home</span></i>
+                <i class="fas fa-download home-1"><span class="home">Downloads</span></i>
+
+                <i class="fas fa-star home-1"><span class="home">Favourites</span></i>
+                <i class="fas fa-cog home-1"><span class="home">Settings</span></i>
+
+            </div>
+            <div class="profile">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/user-profile-img.png" class="image-1" />
+                <p class="name">Sarath Maarar</p>
+            </div>
+        </div>
+        <div class="favourites-container">
+            <h1 class="favourites-heading">Favourites</h1>
+            <h1 class="cars">Cars</h1>
+            <div class="cars-container">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/car-1-img.png" class="b-image" />
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/car-2-img.png" class="b-image" />
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/car-3-img.png" class="b-image" />
+
+            </div>
+
+            <h1 class="cars">Bikes</h1>
+            <div class="cars-container">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/bike-1-img.png" class="b-image" />
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/bike-2-img.png" class="b-image" />
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/bike-3-img.png" class="b-image" />
+
+            </div>
+
+
+            <h1 class="cars">Houses</h1>
+            <div class="cars-container">
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/house-1-img.png" class="b-image" />
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/house-2-img.png" class="b-image" />
+                <img src="https://assets.ccbp.in/frontend/intermediate-rwd/house-3-img.png" class="b-image" />
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
